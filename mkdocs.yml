@@ -1,0 +1,63 @@
+site_name: D.ASH SDK
+site_author: dConstruct
+
+theme:
+    name: material
+    logo: 'img/white.png'
+    favicon: 'img/logo.png'
+    language: en
+    features:
+        - navigation.sections
+        - navigation.tabs
+    palette:
+        scheme: slate
+        primary: red
+        accent: red
+        toggle:
+            icon: material/weather-night
+            name: Switch to dark mode
+        scheme: default
+        primary: red
+        accent: red
+        toggle:
+            icon: material/weather-sunny
+            name: Switch to light mode
+    font:
+        text: Formular Formular
+        
+markdown_extensions:
+    - attr_list
+    - admonition
+    - pymdownx.highlight:
+        linenums_style: pymdownx-inline
+    - pymdownx.superfences
+    - pymdownx.inlinehilite
+    - pymdownx.snippets
+    - pymdownx.critic
+    - pymdownx.caret
+    - pymdownx.mark
+    - pymdownx.tilde
+    - pymdownx.smartsymbols
+extra:
+  homepage: https://www.dconstruct.co/
+
+  
+nav:
+    - Home: index.md
+    - Setup:
+        - Installing Dependencies on the Desktop: setup/desktop-setup.md
+        - Installing Dependencies on Robots: setup/robot-setup.md
+        - Payload Registration: setup/payload-reg.md
+    - Getting Started:
+        - Setting up d.ASH Server: getting-started/dash-server.md
+        - Setting up ROS Driver: getting-started/ros-driver.md
+        - Configuring Spot: getting-started/config-spot.md
+        - Configuring Sensors: getting-started/config-connect.md
+        - UE Client Setup: getting-started/UE-client.md
+        - Map Loading: setup/file-org.md
+        - Localisation: getting-started/localisation.md
+        - Waypoint recording and sending: getting-started/waypoint.md
+    - SDK Configuration:
+        - Robot Configuration: sdk-config/robot-config.md
+        - Intel RealSense Configuration: sdk-config/realsense.md
+        - Auto Configuration: sdk-config/auto-config.md
